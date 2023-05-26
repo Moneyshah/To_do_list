@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async></script>
+    <script src="bootstrap.bundle.js" async></script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>To Do List</h2>
+          <p>-Designed by Manisha-</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Add Task</h2>
+
+            <form action="/action_page.php">
+              <div class="mb-3 mt-3">
+                <label for="email">Task:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="task"
+                  placeholder="Enter your task"
+                  name=""
+                />
+              </div>
+              <div class="mb-3">
+                <label for="startdate">Start:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="start"
+                  placeholder="Enter select start date"
+                  name=""
+                />
+              </div>
+              <div class="mb-3">
+                <label for="enddate">End: </label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Enter select start date"
+                  name=""
+                  id="end"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-check-label"> Description: </label>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="description"
+                  name="text"
+                ></textarea>
+              </div>
+              <button type="submit" id="submit_task" class="btn btn-primary">
+                Submit Task
+              </button>
+            </form>
+          </div>
+
+          <div class="col-md-8">
+            <h3><u>To Do Actions</u></h3>
+            <div class="toast_area">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
